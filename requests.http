@@ -1,9 +1,20 @@
+###USER CREATE
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-"name": "Ryan",
-"email": "ryan@info.com",
-"password_digest": "password2",
-"image": "image.jpeg"
+"name": "Marc",
+"email": "marc@info.com",
+"password_digest": "password3",
+"image": "image.png"
+}
+
+###TWEET CREATE
+POST http://localhost:3000/tweets.json
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "text": "Good evening world, this is the first tweet.",
+  "image": "image.url"
 }
