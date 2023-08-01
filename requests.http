@@ -18,3 +18,6 @@ Content-Type: application/json
   "text": "Good evening world, this is the first tweet.",
   "image": "image.url"
 }
+
+###Tweet Delete
+DELETE httpy://lcoalhost:3000/tweets/1.json
