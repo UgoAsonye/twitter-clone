@@ -18,3 +18,11 @@ Content-Type: application/json
   "text": "Good evening world, this is the first tweet.",
   "image": "image.url"
 }
+
+###TWEET INDEX
+GET http://localhost:3000/tweets.json
+Content-Type: application/json
+
+###USER INDEX
+GET http://localhost:3000/users.json
+Content-Type: application/json

@@ -11,4 +11,8 @@ class TweetsController < ApplicationController
       render json: { errors: @tweet.errors.full_messages }, status: :bad_request
     end
   end
+
+  def index
+    @tweets = Tweet.all
+  end
 end
