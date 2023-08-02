@@ -1,4 +1,9 @@
 <h1> Tweeter </h1>
 <% @tweets.each do |tweet| %>
   <h2><%= tweet.text %></h2>
+   <li>
+   <a href="/tweets/<%= tweet.id%>">
+    Tweet Show
+      </a>
+   </li>
   <% end %>
