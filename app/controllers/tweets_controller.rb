@@ -13,14 +13,12 @@ class TweetsController < ApplicationController
     end
   end
 
-  def destroy
-    @tweet = Tweet.find_by(id: params[:id])
-    
-    if @tweet
-      @tweet.destroy
-      render json: { message: "Tweeter Deleter Running...Tweet has been successfully eliminated!" }
-    else
-      render json: { message: "Tweet not found" }, status: :not_found
-    end
+  def index
+    @tweets = Tweet.all
   end
+end
+
+def destroy
+  @tweet = Tweet.fing_by([id:])
+  tweet.destroyrender json: {message: "Tweeter Deleter Running...Tweet has been successfully eliminated!"}
 end
