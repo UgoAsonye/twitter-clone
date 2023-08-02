@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(
       user_id: params[:user_id],
       text: params[:text],
-      image: params[:image]
+      image: params[:image],
     )
 
     if @tweet.save
@@ -17,10 +17,9 @@ class TweetsController < ApplicationController
     @tweets = Tweet.all
   end
 
-def destroy
-  @tweet = Tweet.find_by(id: params[:id])
-  @tweet.destroy
-  render json: {message: "Tweeter Deleter Running...Tweet has been successfully eliminated!"}
+  def destroy
+    @tweet = Tweet.find_by(id: params[:id])
+    @tweet.destroy
+    render json: { message: "Tweeter Deleter Running...Tweet has been successfully eliminated!" }
+  end
 end
-end
-
