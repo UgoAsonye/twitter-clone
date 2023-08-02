@@ -15,9 +15,9 @@ Content-Type: application/json
 
 {
   "user_id": 1,
-  "text": "Good evening world, this is the first tweet.",
+  "text": "Marc has been banished to the land of forgotten Marcs.",
   "image": "image.url"
 }
 
-###Tweet Delete
-DELETE httpy://lcoalhost:3000/tweets/1.json
+###Tweeter Deleter
+DELETE http://lcoalhost:3000/tweets/1.json
