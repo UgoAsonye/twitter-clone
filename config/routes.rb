@@ -12,4 +12,5 @@ Rails.application.routes.draw do
 
   post "/tweets" => "tweets#create"
   get "/tweets" => "tweets#index"
+
 end
