@@ -16,3 +16,8 @@ class TweetsController < ApplicationController
     @tweets = Tweet.all
   end
 end
+
+def destroy
+  @tweet = Tweet.fing_by(id:])
+  tweet.destroyrender json: {message: "Tweeter Deleter Running...Tweet has been successfully eliminated!"}
+end
