@@ -19,5 +19,10 @@ Content-Type: application/json
   "image": "image.url"
 }
 
-###Tweet Delete
-DELETE httpy://lcoalhost:3000/tweets/1.json
+###TWEET INDEX
+GET http://localhost:3000/tweets.json
+Content-Type: application/json
+
+###USER INDEX
+GET http://localhost:3000/users.json
+Content-Type: application/json
