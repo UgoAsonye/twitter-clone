@@ -16,9 +16,11 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all
   end
-end
 
 def destroy
-  @tweet = Tweet.fing_by([id:])
-  tweet.destroyrender json: {message: "Tweeter Deleter Running...Tweet has been successfully eliminated!"}
+  @tweet = Tweet.find_by(id: params[:id])
+  @tweet.destroy
+  render json: {message: "Tweeter Deleter Running...Tweet has been successfully eliminated!"}
 end
+end
+

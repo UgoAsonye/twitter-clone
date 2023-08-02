@@ -26,3 +26,7 @@ Content-Type: application/json
 ###USER INDEX
 GET http://localhost:3000/users.json
 Content-Type: application/json
+
+###Tweeter Deleter
+DELETE http://localhost:3000/tweets/2.json
+Content-Type: application/json
