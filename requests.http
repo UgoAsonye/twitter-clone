@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
   "user_id": 1,
-  "text": "Good evening world, this is the first tweet.",
+  "text": "Marc has been banished to the land of forgotten Marcs.",
   "image": "image.url"
 }
 
@@ -25,4 +25,8 @@ Content-Type: application/json
 
 ###USER INDEX
 GET http://localhost:3000/users.json
+Content-Type: application/json
+
+###Tweeter Deleter
+DELETE http://localhost:3000/tweets/2.json
 Content-Type: application/json

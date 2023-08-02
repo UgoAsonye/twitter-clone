@@ -5,6 +5,7 @@ class TweetsController < ApplicationController
       text: params[:text],
       image: params[:image],
     )
+
     if @tweet.save
       render json: { message: "Tweet has been tweeted!" }, status: :created
     else
@@ -16,13 +17,9 @@ class TweetsController < ApplicationController
     @tweets = Tweet.all
   end
 
-  def show
-    @tweet = Tweet.find_by(id: params[:id])
-    render :show
-  end
-
   def destroy
-    @tweet = Tweet.find_by(id:)
-    tweet.destroyrender json: { message: "Tweeter Deleter Running...Tweet has been successfully eliminated!" }
+    @tweet = Tweet.find_by(id: params[:id])
+    @tweet.destroy
+    render json: { message: "Tweeter Deleter Running...Tweet has been successfully eliminated!" }
   end
 end
