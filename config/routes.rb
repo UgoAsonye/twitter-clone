@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :tweets
   resources :users
   resources :relationships
+
   get "/signup" => "users#new"
   post "/users" => "users#create"
   get "/users" => "users#index"
@@ -12,5 +13,4 @@ Rails.application.routes.draw do
 
   post "/tweets" => "tweets#create"
   get "/tweets" => "tweets#index"
-
 end
